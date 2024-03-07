@@ -1,0 +1,26 @@
+.st-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.st-title {
+  color: var(--primary-foreground);
+  font-size: 30px;
+}
+
+.st-separator {
+  margin: 0 40px;
+  width: 4px;
+  height: 80px;
+  background-color: var(--secondary-background);
+}
+
+.st-img {
+  width: 200px;
+}
+
+@media (max-width: 650px) {
+  .st-img {display: none}
+  .st-separator {display: none}
+}

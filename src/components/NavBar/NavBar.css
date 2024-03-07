@@ -1,0 +1,66 @@
+.nv-nav {
+  width: 100%;
+  background-color: var(--terciary-background);
+  position: fixed;
+}
+
+.nv-linksList {
+  margin: auto;
+  width: 96%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nv-linksList li {
+  height: 72px;
+}
+
+.nv-linksList li:first-child {
+  margin-right: auto;
+}
+
+.nv-link {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-foreground);
+  font-size: 16px;
+}
+
+.nv-link:hover:not(.logo) {
+  background-color: var(--primary-red);
+}
+
+.icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nv-responsiveLinksList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  display: none;
+}
+
+.nv-responsiveLinksList li {
+  width: 100%;
+}
+
+.nv-responsiveLinksList .nv-link {
+  padding: 30px 0;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .nv-linksList {width: 100%}
+  .nv-linksList .hide {display:none}
+  .icon {display:flex}
+}
+
+

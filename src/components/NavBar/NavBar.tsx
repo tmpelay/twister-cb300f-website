@@ -1,23 +1,35 @@
+import './NavBar.css'
+
 function NavBar() {
+
+  const toggleMenu = () => {
+    var navbar = document.getElementById("responsive-navbar")
+    console.log(navbar.style.display)
+    if (navbar.style.display == "flex") {
+      navbar.style.display = "none"
+    } else {
+      navbar.style.display = "flex"
+    }
+  }
+
   return (
-    <nav className="nv-container">
-      <div className="nv-logo">
-        <img src="images/honda-logo.png" />
-      </div>
-      <div className="nv-linksContainer">
+    <nav className="nv-nav">
         <ul className="nv-linksList">
-          <li><a className="nv-link" href="#home">Inicio</a></li>
-          <li><a className="nv-link" href="#design">Diseño</a></li>
-          <li><a className="nv-link" href="#tech">Tecnologia</a></li>
-          <li><a className="nv-link" href="/">Seguridad</a></li>
-          <li><a className="nv-link" href="/">Motor</a></li>
-          <li><a className="nv-link" href="/">Suspension</a></li>
-          <li><a className="nv-link" href="/">Puerto USB</a></li>
-          <li><a className="nv-link" href="#colors">Colores</a></li>
-          <li><a className="nv-link" href="#buy">Comprar</a></li>
-          <li><a className="nv-link" href="#specs">Ficha Tecnica</a></li>
+          <li><a className="nv-link logo" href="#home"><img src="images/honda-logo.png" /></a></li>
+          <li><a className="nv-link hide" href="#design">Diseño</a></li>
+          <li><a className="nv-link hide" href="#tech">Tecnologia</a></li>
+          <li><a className="nv-link hide" href="#colors">Colores</a></li>
+          <li><a className="nv-link hide" href="#buy">Comprar</a></li>
+          <li><a className="nv-link hide" href="#specs">Ficha Tecnica</a></li>
+          <li><a className="nv-link icon"onClick={toggleMenu}><i className='bx bx-menu' /></a></li>
         </ul>
-      </div>
+        <ul id="responsive-navbar" className="nv-responsiveLinksList">
+          <li><a className="nv-link hide" onClick={toggleMenu} href="#design">Diseño</a></li>
+          <li><a className="nv-link hide" onClick={toggleMenu} href="#tech">Tecnologia</a></li>
+          <li><a className="nv-link hide" onClick={toggleMenu} href="#colors">Colores</a></li>
+          <li><a className="nv-link hide" onClick={toggleMenu} href="#buy">Comprar</a></li>
+          <li><a className="nv-link hide" onClick={toggleMenu} href="#specs">Ficha Tecnica</a></li>
+        </ul>
     </nav >
   )
 }

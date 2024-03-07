@@ -1,3 +1,5 @@
+import "./SubTitle.css"
+
 function SubTitle({ children }) {
   return (
     <div className="st-container">
