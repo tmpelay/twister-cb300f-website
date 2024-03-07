@@ -4,14 +4,14 @@ function NavBar() {
 
   const toggleMenu = () => {
     var navbar = document.getElementById("responsive-navbar")
-    console.log(navbar.style.display)
-    if (navbar.style.display == "flex") {
-      navbar.style.display = "none"
-    } else {
-      navbar.style.display = "flex"
+    if (navbar != null) {
+      if (navbar.style.display == "flex") {
+        navbar.style.display = "none"
+      } else {
+        navbar.style.display = "flex"
+      }
     }
   }
-
   return (
     <nav className="nv-nav">
         <ul className="nv-linksList">

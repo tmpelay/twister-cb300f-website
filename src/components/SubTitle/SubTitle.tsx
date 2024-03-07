@@ -1,6 +1,6 @@
 import "./SubTitle.css"
 
-function SubTitle({ children }) {
+function SubTitle({ children }: any) {
   return (
     <div className="st-container">
       <h2 className="st-title">{children}</h2>

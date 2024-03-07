@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function ColorBtn({ color, setColor, children }) {
+export default function ColorBtn({ color, setColor, children }: any) {
   const className = `cb-container ${color}`
 
   const handleClick = () => {
