@@ -16,9 +16,7 @@ function App() {
       <main>
         <section id="home" className='home-section'>
           <div className="sl-slider">
-            <img className="sl-arrow" src="images/arrow-left.png" />
             <img className="sl-twister-img" src="images/twister-image1.png" />
-            <img className="sl-arrow" src="images/arrow.png" />
           </div>
           <div className="foot-img">
             <img className="infinia-logo" src="images/infinia-logo.png" />
