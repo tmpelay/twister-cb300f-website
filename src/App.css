@@ -46,7 +46,9 @@ body {
     margin: 0;
     width: 80%;
   }
-  .sl-arrow {display: none}
+  .sl-arrow {
+    display: none;
+  }
 }
 
 .foot-img {
@@ -59,7 +61,9 @@ body {
 }
 
 @media (max-width: 1550px) {
-  .foot-img {display: none}
+  .foot-img {
+    display: none;
+  }
 }
 
 .ds-info {
@@ -101,11 +105,16 @@ body {
     flex-direction: column-reverse;
     gap: 40px;
   }
-  .ds-text {text-align: center}
+  .ds-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 530px) {
-  .ds-img img, .ds-text {width: 85vw}
+  .ds-img img,
+  .ds-text {
+    width: 85vw;
+  }
 }
 
 .tc-img {
@@ -121,8 +130,12 @@ body {
 }
 
 @media (max-width: 760px) {
-  .tc-img {width: 85vw}
-  .tc-text {width: 82vw}
+  .tc-img {
+    width: 85vw;
+  }
+  .tc-text {
+    width: 82vw;
+  }
 }
 
 .cl-container {
@@ -190,8 +203,12 @@ body {
 }
 
 @media (max-width: 600px) {
-  .price {font-size: 14vw}
-  .cl-container img {width: 85vw}
+  .price {
+    font-size: 14vw;
+  }
+  .cl-container img {
+    width: 85vw;
+  }
 }
 
 .buy-btn {
@@ -213,14 +230,16 @@ table {
   border-collapse: collapse;
 }
 
-table tr, td {
+table tr,
+td {
   padding: 8px 12px;
   font-size: 16px;
   border: 2px solid var(--secondary-foreground);
-  color: var(--primary-foreground)
+  color: var(--primary-foreground);
 }
 
 @media (max-width: 800px) {
-  table {width: 80%}
+  table {
+    width: 80%;
+  }
 }
-
